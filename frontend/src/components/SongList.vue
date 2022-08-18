@@ -1,9 +1,19 @@
 <template>
-    <h1>SongList</h1>
-    <template v-for="(song, index) in songs" :key="index">
-        <div>{{ song.title }}</div>
-        <div>{{ song.lyrics }}</div>
-    </template>
+    <div class="container my-4">
+        <div class="row">
+            <template v-for="(song, index) in songs" :key="index">
+                <div class="col-4-sm-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ song.title }}</h5>
+                            <p class="card-text">{{ song.lyrics }}</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
 </template>
 
 <script lang="ts">
