@@ -1,8 +1,8 @@
 <template>
-    <div class="container my-4">
+    <div class="container">
         <div class="row">
             <template v-for="(song, index) in songs" :key="index">
-                <div class="col-4-sm-12">
+                <div class="col-4-sm-12 my-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">{{ song.title }}</h5>
